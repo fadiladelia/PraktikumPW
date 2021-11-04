@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+    background-color: gainsboro;
+}
+
+table {
+    width: 100%;
+}
+
+.img1 {
+    width: 20%;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.profile{
+    padding: 20px;
+    vertical-align: top;
+}
+
+.isi {
+    list-style: none;
+    padding: 0px;
+    line-height: 24px;
+}
+
+.categori {
+    padding: 20px;
+    vertical-align: top;
+    text-align: right;
+}
+
+.ctg {
+    list-style: none;
+    padding: 0px;
+}
+
+footer {
+    padding: 20px;
+}
+
+.video {
+    float: left;
+    display: block;
+    padding-right: 170px;
+}
+
+.pdf {
+    float: right;
+    display: block;
+    width: 300px;
+}
+
+.list {
+    list-style: none;
+}
+
+.img2 {
+    width: 250px;
+}
+
+
+
+
+
+
