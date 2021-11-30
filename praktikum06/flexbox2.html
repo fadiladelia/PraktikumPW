@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .container { 
+                width: 800px;
+                margin: auto;
+                display: flex;
+            }
+            .kiri {
+                width: 200px;
+                height: 600px;
+                padding: 20px;
+                background-color:pink;
+            }
+            .kanan {
+                display: flex;
+                flex-direction: column;
+            }
+            .header {
+                width: 600px;
+                height: 80px;
+                padding: 20px;
+                background-color:palegoldenrod;
+            }
+            .main {
+                display: flex;
+            }
+            .article {
+                width: 400px;
+                height: 440px;
+                background-color:white;
+                padding: 20px;
+            }
+            .aside {
+                width: 200px;
+                height: 440px;
+                background-color: aqua;
+                padding: 20px;
+            }
+            .footer {
+                width: 600px;
+                height: 80px;
+                padding: 20px;
+                background-color:palegoldenrod;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="kiri">Nav</div>
+            <div class="kanan">
+                <div class="header">Header</div>
+                <div class="main">
+                    <div class="article">Article</div>
+                    <div class="aside">Aside</div>
+                </div>
+                <div class="footer">Footer</div>
+            </div>    
+        </div>
+    </body>
+</html>

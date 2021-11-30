@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            h2{
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: white;
+            }
+            body {
+                background-color: pink;
+                display: flex;
+                flex-direction: column;
+                padding: 20px;
+                margin: 5px;   
+            }
+            header {
+                background-color:powderblue;
+                width: 100%;
+                height: 60px;
+            }
+            #main {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            #main > aside {
+                background:skyblue;
+                width: 400px;
+                height: 500px;
+            }
+            .txt {
+                margin-top: 40px;
+
+            }
+            #main > article {
+                background: salmon;
+                width: 800px;
+                height: 500px;
+                display: flex;
+                padding: 20px;
+                justify-content: space-between;
+            }
+            .img {               
+                align-self: flex-end;
+            }
+            footer {
+                background-color:powderblue;
+                width: 100%;
+                height: 60px;
+            }
+        </style>
+    </head>
+    <body>
+        <header><h2>Header</h2></header>
+        <div id="main">
+            <aside><h2 class="txt">Aside</h2></aside>
+            <article>
+                <h2>Article</h2> 
+                <div class="img">
+                    <img src="gbr1.jpg" width="227px" alt="">
+                    <img src="gbr1.jpg" width="227px" alt="">
+                    <img src="gbr1.jpg" width="227px" alt="">
+                </div>
+                
+            </article>
+        </div>
+        <footer><h2>Footer</h2></footer>
+    </body>
+</html>
