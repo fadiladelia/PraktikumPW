@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  width: 800px;
+  height: 500px;
+  margin: 80px auto;
+  border: 2px solid black;
+  position: relative;
+  background-image: url(bg.jpg);
+}
+input#chat {
+  position: absolute;
+  bottom: 0;
+  width: 735px;
+  border: 2px solid chocolate;
+}
+button {
+  width: 60px;
+  background-color: chocolate;
+  border: 2px solid chocolate;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+div#kolom {
+  width: 785px;
+  height: 470px;
+  margin: 10px auto 0 10px;
+  overflow: auto;
+  color: white;
+  font: bold 17px/15px cursive;
+  /* position: absolute;
+  bottom: 0;
+  margin-left: 10px; */
+}

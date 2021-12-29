@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kurs Mata Uang</title>
+  </head>
+  <body>
+    <input
+      id="nilai"
+      type="text"
+      placeholder="Masukkan Nilai"
+      onchange="tampilhasil()"
+    />
+
+    <select id="pilihan" onchange="tampilhasil()">
+      <option value="awal">Pilih Kurs Tukar</option>
+      <option value="US Dollar">US Dollar</option>
+      <option value="Dollar Singapore">Dollar Singapore</option>
+      <option value="Ringgit Malaysia">Ringgit Malaysia</option>
+      <option value="Yen Jepang">Yen Jepang</option>
+      <option value="Euro">Euro</option>
+      <option value="Riyal Saudi">Riyal Saudi</option>
+    </select>
+
+    <input id="hasil" type="text" placeholder="Hasil" />
+
+    <script>
+      let nilaiAwal = document.getElementById("nilai");
+      let valas1 = document.getElementById("pilihan");
+      let hasil = document.getElementById("hasil");
+      let penampung;
+      let format = new Intl.NumberFormat("id-ID");
+
+      function tampilhasil() {
+        if (valaspilihan.value == "US Dollar") {
+          penampung = nilaiAwal.value * 9915;
+        } else if (valaspilihan.value == "Dollar Singapore") {
+          penampung = nilaiAwal.value * 13472;
+        } else if (valaspilihan.value == "Ringgit Malaysia") {
+          penampung = nilaiAwal.value * 874;
+        } else if (valaspilihan.value == "Yen Jepang") {
+          penampung = nilaiAwal.value * 120;
+        } else if (valaspilihan.value == "Euro") {
+          penampung = nilaiAwal.value * 15888;
+        } else if (valaspilihan.value == "Riyal Saudi") {
+          penampung = nilaiAwal.value * 3592;
+        } else {
+          penampung = nilaiAwal.value * 0;
+        }
+
+        hasil.value = "RP. " + format.format(penampung);
+      }
+    </script>
+  </body>
+</html>
