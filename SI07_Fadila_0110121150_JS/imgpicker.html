@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+        body {
+            background-color: wheat;
+        }
+        .gbr {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <h1>IMAGE PICKER</h1>
+        <select id="pilih" onchange="myImage()">
+            <option value="0">Choose</option>
+            <option value="Badak">Badak</option>
+            <option value="Gajah">Gajah</option>
+            <option value="Harimau">Harimau</option>
+            <option value="Jerapah">Jerapah</option>
+            <option value="Kalkun">Kalkun</option>
+            <option value="Koala">Koala</option>
+            <option value="Komodo">Komodo</option>
+            <option value="Orang Utan">Orang Utan</option>
+            <option value="Panda">Panda</option>
+            <option value="Rusa">Rusa</option>
+            <option value="Zebra">Zebra</option>
+        </select>
+        <div id="zoo"></div>
+    </fieldset>
+    
+
+    <script>
+        function myImage() {
+            var hwn = document.getElementById("pilih").value;
+
+            if (hwn == "Badak") {
+                Panda = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/badak.jpeg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+            if (hwn == "Gajah") {
+                Badak = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/gajah.jpg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+            if (hwn == "Harimau") {
+                Komodo = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/harimau.jpg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+            if (hwn == "Jerapah") {
+                Merak = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/jerapah.jpg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+            if (hwn == "Kalkun") {
+                Panda = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/kalkun.jpg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+            if (hwn == "Koala") {
+                Tringgiling = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/koala.jpg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+            if (hwn == "Komodo") {
+                Tringgiling = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/komodo.jpg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+            if (hwn == "Orang Utan") {
+                Platipus = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/orang utan.jpg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+            if (hwn == "Panda") {
+                Tringgiling = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/panda.jpg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+            if (hwn == "Rusa") {
+                Tringgiling = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/rusa.jpg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+            if (hwn == "Zebra") {
+                Tringgiling = document.getElementById("zoo").innerHTML = '<img class="gbr" src="img/zebra.jpg">'
+                window.alert("Ini Gambar " + hwn);
+            }
+        }
+    </script>
+</body>
+</html>
